@@ -62,10 +62,6 @@ Di samping itu, Anda mungkin tertarik pada proyek terkait kami:
   <a href="https://github.com/SWE-bench/sb-cli"><img src="docs/assets/sbcli_logo_text_below.svg" alt="sb-cli" height="120px"></a>
 </div>
 
-## Kontribusi
-
-Jika Anda ingin berkontribusi, kami menerima [issues](https://github.com/SWE-agent/SWE-agent/issues) dan [pull requests](https://github.com/SWE-agent/SWE-agent/pulls)! Untuk perubahan besar, mohon diskusikan lewat issue terlebih dahulu.
-
 ## Sitasi & kontak
 
 SWE-agent adalah proyek akademik yang dimulai di Princeton oleh John Yang*, Carlos E. Jimenez*, Alexander Wettig, Kilian Lieret, Shunyu Yao, Karthik Narasimhan, dan Ofir Press.

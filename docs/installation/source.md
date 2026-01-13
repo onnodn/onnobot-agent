@@ -46,8 +46,7 @@ when you installed SWE-agent.
     To make sure you are on the latest version, periodically run `git pull`
     (there is no need to redo the `pip install`).
     * SWE-agent EnIGMA is currently only compatible with `v0.7` of SWE-agent. Please run `git switch v0.7` after step 1 to switch to the correct version.
-    * Want to modify SWE-agent? Great! There are a few extra steps and tips:
-    Please check our [contribution guide](../dev/contribute.md).
+    * Ingin memodifikasi SWE-agent? Silakan hubungi pemilik repositori untuk koordinasi dan panduan lebih lanjut.
 
 [conda]: https://docs.conda.io/en/latest/
 [virtual environments]: https://realpython.com/python-virtual-environments-a-primer/

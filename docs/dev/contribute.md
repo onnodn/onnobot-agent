@@ -1,19 +1,10 @@
-# Contribute to SWE-agent
+# Kontribusi
 
-!!! tip "Formatting change"
-    We've recently added automated formatting to our code base.
-    If you are dealing with merge-conflicts when opening a PR or updating your fork,
-    please first install `pre-commit` and run `pre-commit run --all-files` and try again.
+Panduan kontribusi telah dihapus oleh pemilik repositori.
 
-{%
-    include-markdown "../../CONTRIBUTING.md"
-    start="<!-- INCLUSION START -->"
-    end="<!-- INCLUSION END -->"
-%}
+Jika Anda perlu berkolaborasi atau memiliki pertanyaan terkait kontribusi, silakan hubungi pemilik repositori.
 
-Wanna do more and actually contribute code? Great! Please see the following sections for tips and guidelines!
-
-## Development repository set-up
+{% include-markdown "../_footer.md" %}
 
 Please install the repository from source, following our [usual instructions](../installation/source.md) but add the `[dev]` option to the `pip` command (you can just run the command again):
 
