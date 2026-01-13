@@ -31,7 +31,7 @@ SWE-agent dibuat dan dipelihara oleh peneliti dari Princeton University dan Stan
 
 ## 🚀 Mulai cepat!
 
-👉 Coba SWE-agent di browser Anda: [![Open in GitHub Codespaces](https://img.shields.io/badge/Open_in_GitHub_Codespaces-gray?logo=github)](https://codespaces.new/SWE-agent/SWE-agent) ([lebih lanjut](https://swe-agent.com/latest/installation/codespaces/))
+👉 Coba OnnoBot-agent di browser Anda: [![Open in GitHub Codespaces](https://img.shields.io/badge/Open_in_GitHub_Codespaces-gray?logo=github)](https://codespaces.new/onnodn/onnobot-agent) ([lebih lanjut](https://swe-agent.com/latest/installation/codespaces/))
 
 Baca dokumentasi kami untuk info lebih lanjut:
 
@@ -89,10 +89,10 @@ MIT. Lihat `LICENSE`.
 
 <div align="center">
 
-[![Pytest](https://github.com/SWE-agent/SWE-agent/actions/workflows/pytest.yaml/badge.svg)](https://github.com/SWE-agent/SWE-agent/actions/workflows/pytest.yaml)
-[![build-docs](https://github.com/SWE-agent/SWE-agent/actions/workflows/build-docs.yaml/badge.svg)](https://github.com/SWE-agent/SWE-agent/actions/workflows/build-docs.yaml)
-[![codecov](https://codecov.io/gh/SWE-agent/SWE-agent/graph/badge.svg?token=18XAVDK365)](https://codecov.io/gh/SWE-agent/SWE-agent)
-[![pre-commit.ci status](https://results.pre-commit.ci/badge/github/SWE-agent/SWE-agent/main.svg)](https://results.pre-commit.ci/latest/github/SWE-agent/SWE-agent/main)
+[![Pytest](https://github.com/onnodn/onnobot-agent/actions/workflows/pytest.yaml/badge.svg)](https://github.com/onnodn/onnobot-agent/actions/workflows/pytest.yaml)
+[![build-docs](https://github.com/onnodn/onnobot-agent/actions/workflows/build-docs.yaml/badge.svg)](https://github.com/onnodn/onnobot-agent/actions/workflows/build-docs.yaml)
+[![codecov](https://codecov.io/gh/onnodn/onnobot-agent/graph/badge.svg?token=18XAVDK365)](https://codecov.io/gh/onnodn/onnobot-agent)
+[![pre-commit.ci status](https://results.pre-commit.ci/badge/github/onnodn/onnobot-agent/main.svg)](https://results.pre-commit.ci/latest/github/onnodn/onnobot-agent/main)
 
 </div>
 ```

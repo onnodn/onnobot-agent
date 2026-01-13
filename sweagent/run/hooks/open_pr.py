@@ -36,9 +36,9 @@ def open_pr(*, logger, token, env: SWEEnv, github_url, trajectory, _dry_run: boo
     except InvalidGithubURL as e:
         msg = "Data path must be a github issue URL if open_pr is set to True."
         raise ValueError(msg) from e
-    branch_name = f"swe-agent-fix-#{issue.number}-" + str(random.random())[2:10]
+    branch_name = f"onnobot-agent-fix-#{issue.number}-" + str(random.random())[2:10]
     env.communicate(
-        input="git config user.email 'noemail@swe-agent.com' && git config user.name 'SWE-agent'",
+        input="git config user.email 'noemail@onnobot-agent.com' && git config user.name 'OnnoBot-agent'",
         error_msg="Failed to set git user",
         timeout=10,
         check="raise",
@@ -92,7 +92,7 @@ def open_pr(*, logger, token, env: SWEEnv, github_url, trajectory, _dry_run: boo
     )
     logger.debug(f"Pushed commit to {remote=} {branch_name=}: {out}")
     body = (
-        f"This is a PR opened by AI tool [SWE Agent](https://github.com/SWE-agent/SWE-agent/) "
+        f"This is a PR opened by AI tool [OnnoBot-agent](https://github.com/onnodn/onnobot-agent/) "
         f"to close [#{issue.number}]({issue_url}) ({issue.title}).\n\nCloses #{issue.number}."
     )
     body += "\n\n" + format_trajectory_markdown(trajectory, char_limit=60_000)
@@ -102,7 +102,7 @@ def open_pr(*, logger, token, env: SWEEnv, github_url, trajectory, _dry_run: boo
         args = dict(
             owner=owner,
             repo=repo,
-            title=f"SWE-agent[bot] PR to fix: {issue.title}",
+            title=f"OnnoBot-agent[bot] PR to fix: {issue.title}",
             head=head,
             base=default_branch,
             body=body,
