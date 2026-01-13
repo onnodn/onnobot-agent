@@ -20,7 +20,7 @@ SWEREX_RECOMMENDED_VERSION = "1.2.1"
 # Monkey patch the logger to use our implementation
 log_swerex.get_logger = partial(get_logger, emoji="🦖")
 
-# See https://github.com/SWE-agent/SWE-agent/issues/585
+# See https://github.com/onnodn/onnobot-agent/issues/585
 getLogger("datasets").setLevel(WARNING)
 getLogger("numexpr.utils").setLevel(WARNING)
 getLogger("LiteLLM").setLevel(WARNING)
@@ -30,7 +30,7 @@ PACKAGE_DIR = Path(__file__).resolve().parent
 if sys.version_info < PYTHON_MINIMUM_VERSION:
     msg = (
         f"Python {sys.version_info.major}.{sys.version_info.minor} is not supported. "
-        "SWE-agent requires Python 3.11 or higher."
+        "OnnoBot-agent requires Python 3.11 or higher."
     )
     raise RuntimeError(msg)
 
@@ -79,7 +79,7 @@ def get_agent_version_info() -> str:
     hash = get_agent_commit_hash()
     rex_hash = get_rex_commit_hash()
     rex_version = get_rex_version()
-    return f"This is SWE-agent version {__version__} ({hash=}) with SWE-ReX version {rex_version} ({rex_hash=})."
+    return f"This is OnnoBot-agent version {__version__} ({hash=}) with SWE-ReX version {rex_version} ({rex_hash=})."
 
 
 def impose_rex_lower_bound() -> None:
@@ -98,11 +98,11 @@ def impose_rex_lower_bound() -> None:
             "running `pip install --upgrade swe-rex`."
             "You can also rerun `pip install -e .` in this repository to install the latest version."
         )
-        get_logger("swe-agent", emoji="👋").warning(msg)
+        get_logger("onnobot-agent", emoji="👋").warning(msg)
 
 
 impose_rex_lower_bound()
-get_logger("swe-agent", emoji="👋").info(get_agent_version_info())
+get_logger("onnobot-agent", emoji="👋").info(get_agent_version_info())
 
 
 __all__ = [

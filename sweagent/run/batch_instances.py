@@ -159,7 +159,7 @@ class SimpleBatchInstance(BaseModel):
     @model_validator(mode="before")
     @classmethod
     def handle_legacy_id(cls, data):
-        # Handling compatibility with swe-agent <= 1.0.1
+        # Handling compatibility with onnobot-agent <= 1.0.1
         if isinstance(data, dict):
             if "id" in data and "instance_id" not in data:
                 data["instance_id"] = data["id"]
