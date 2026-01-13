@@ -113,7 +113,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#frequently-asked-questions" class="md-skip">
+        <a href="#pertanyaan-yang-sering-diajukan" class="md-skip">
           Skip to content
         </a>
       
@@ -1092,10 +1092,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#basics" class="md-nav__link">
+  <a href="#dasar-dasar" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Basics
+        Dasar-dasar
       
     </span>
   </a>
@@ -1103,10 +1103,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#models" class="md-nav__link">
+  <a href="#model" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Models
+        Model
       
     </span>
   </a>
@@ -1114,10 +1114,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#configuring-swe-agent" class="md-nav__link">
+  <a href="#mengonfigurasi-onnobot-agent" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Configuring SWE-agent
+        Mengonfigurasi onnobot-agent
       
     </span>
   </a>
@@ -1136,10 +1136,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#anything-else" class="md-nav__link">
+  <a href="#ada-yang-lain" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Anything else?
+        Ada yang lain?
       
     </span>
   </a>
@@ -2633,10 +2633,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#basics" class="md-nav__link">
+  <a href="#dasar-dasar" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Basics
+        Dasar-dasar
       
     </span>
   </a>
@@ -2644,10 +2644,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#models" class="md-nav__link">
+  <a href="#model" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Models
+        Model
       
     </span>
   </a>
@@ -2655,10 +2655,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#configuring-swe-agent" class="md-nav__link">
+  <a href="#mengonfigurasi-onnobot-agent" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Configuring SWE-agent
+        Mengonfigurasi onnobot-agent
       
     </span>
   </a>
@@ -2677,10 +2677,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#anything-else" class="md-nav__link">
+  <a href="#ada-yang-lain" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Anything else?
+        Ada yang lain?
       
     </span>
   </a>
@@ -2713,60 +2713,60 @@
   
 
 
-<h1 id="frequently-asked-questions">Frequently Asked Questions</h1>
-<h2 id="basics">Basics</h2>
+<h1 id="pertanyaan-yang-sering-diajukan">Pertanyaan yang Sering Diajukan</h1>
+<h2 id="dasar-dasar">Dasar-dasar</h2>
 <blockquote>
-<p>Does SWE-agent run on Windows/MacOS/Linux?</p>
+<p>Apakah onnobot-agent berjalan di Windows/MacOS/Linux?</p>
 </blockquote>
-<p>Yes! Your only limitation might be the availability of the docker containers for your environments.
-But you can always execute SWE-agent in the cloud.</p>
+<p>Ya! Satu-satunya batasan Anda mungkin ketersediaan kontainer docker untuk lingkungan Anda.
+Tetapi Anda selalu dapat menjalankan onnobot-agent di cloud.</p>
 <blockquote>
-<p>I got a very long error message about various configuration options not working. What's up?</p>
+<p>Saya mendapat pesan kesalahan yang sangat panjang tentang berbagai opsi konfigurasi yang tidak berfungsi. Apa yang terjadi?</p>
 </blockquote>
-<p>This is probably because of union types.
-See <a href="../usage/cl_tutorial/#union-types">this section</a> for more information, but the short version is that some options (e.g., the repository or problem statement) can be specified in multiple ways, so we try every option until we find the one that works based on your inputs.
-If none of them work, we throw an error which then tells you why we cannot initialize any of the types, so this will get somewhat long and confusing.</p>
+<p>Ini mungkin karena tipe union.
+Lihat <a href="../usage/cl_tutorial/#union-types">bagian ini</a> untuk informasi lebih lanjut, tetapi versi singkatnya adalah bahwa beberapa opsi (misalnya, repositori atau pernyataan masalah) dapat ditentukan dengan cara yang berbeda, jadi kami mencoba setiap opsi hingga menemukan yang bekerja berdasarkan masukan Anda.
+Jika tidak ada yang berfungsi, kami melempar kesalahan yang kemudian memberi tahu Anda mengapa kami tidak dapat menginisialisasi salah satu tipe, jadi ini akan menjadi agak panjang dan membingungkan.</p>
 <blockquote>
-<p>Why are my images not being processed?</p>
+<p>Mengapa gambar saya tidak diproses?</p>
 </blockquote>
-<p>Check that you're using a multimodal configuration (see <code>default_mm_with_images.yaml</code> as an example), have internet connectivity, and images are under 10MB. See <a href="../usage/multimodal/">Multimodal usage notes</a> for more details.</p>
-<h2 id="models">Models</h2>
+<p>Periksa bahwa Anda menggunakan konfigurasi multimodal (lihat <code>default_mm_with_images.yaml</code> sebagai contoh), memiliki konektivitas internet, dan gambar di bawah 10MB. Lihat <a href="../usage/multimodal/">Catatan penggunaan Multimodal</a> untuk detail selengkapnya.</p>
+<h2 id="model">Model</h2>
 <blockquote>
-<p>What models are supported? Do you support local models?</p>
+<p>Model apa yang didukung? Apakah Anda mendukung model lokal?</p>
 </blockquote>
-<p>Probably all of them, including local models! There's even a few for testing. See <a href="../installation/keys/">models</a> and <a href="../config/models/">more on models</a>.</p>
+<p>Mungkin semuanya, termasuk model lokal! Ada bahkan beberapa untuk pengujian. Lihat <a href="../installation/keys/">models</a> dan <a href="../config/models/">lebih lanjut tentang model</a>.</p>
 <blockquote>
-<p>Does SWE-agent support multimodal models and images?</p>
+<p>Apakah onnobot-agent mendukung model multimodal dan gambar?</p>
 </blockquote>
-<p>Yes! SWE-agent supports vision-capable models that can process images from GitHub issues. Use <code>--config config/default_mm_with_images.yaml</code> and specify a multimodal model like Claude Sonnet 4 or GPT-4o. See the <a href="../usage/multimodal/">multimodal guide</a> for details.</p>
+<p>Ya! onnobot-agent mendukung model yang mampu visi yang dapat memproses gambar dari isu GitHub. Gunakan <code>--config config/default_mm_with_images.yaml</code> dan tentukan model multimodal seperti Claude Sonnet 4 atau GPT-4o. Lihat <a href="../usage/multimodal/">panduan multimodal</a> untuk detail.</p>
 <blockquote>
-<p>What can I do if my model doesn't support function calling?</p>
+<p>Apa yang dapat saya lakukan jika model saya tidak mendukung function calling?</p>
 </blockquote>
-<p>You can configure how to parse the model's response by choosing your <code>agent.tools.parse_function</code>.
-The default now is <code>function_calling</code>, but you can change it to <code>thought_action</code>.
-More information in the <a href="../reference/parsers/">reference</a>.
-There are also some config example in our <a href="https://github.com/SWE-agent/SWE-agent/tree/main/config">config folder</a>.</p>
-<h2 id="configuring-swe-agent">Configuring SWE-agent</h2>
+<p>Anda dapat mengonfigurasi cara menguraikan respons model dengan memilih <code>agent.tools.parse_function</code>.
+Standarnya sekarang adalah <code>function_calling</code>, tetapi Anda dapat mengubahnya menjadi <code>thought_action</code>.
+Informasi lebih lanjut di <a href="../reference/parsers/">referensi</a>.
+Ada juga beberapa contoh config di <a href="https://github.com/onnobot-agent/onnobot-agent/tree/main/config">folder config</a> kami.</p>
+<h2 id="mengonfigurasi-onnobot-agent">Mengonfigurasi onnobot-agent</h2>
 <blockquote>
-<p>How can I change the demonstrations given to SWE-agent?</p>
+<p>Bagaimana cara mengubah demonstrasi yang diberikan kepada onnobot-agent?</p>
 </blockquote>
-<p>At the start of each run, we feed the agent a demonstration trajectory, showing it how to solve an example issue.
-This substantially improves the agent's abilities to solve novel issues.
-If you'd like to modify or totally change this demonstration, to better fit your use case, see <a href="../config/demonstrations/">this</a>.</p>
+<p>Pada awal setiap jalan, kami memberi agen lintasan demonstrasi, menunjukkan bagaimana menyelesaikan contoh isu.
+Ini secara substansial meningkatkan kemampuan agen untuk menyelesaikan isu novel.
+Jika Anda ingin memodifikasi atau sepenuhnya mengubah demonstrasi ini, untuk lebih cocok dengan kasus penggunaan Anda, lihat <a href="../config/demonstrations/">ini</a>.</p>
 <blockquote>
-<p>Can I add custom tools?</p>
+<p>Bisakah saya menambahkan alat kustom?</p>
 </blockquote>
-<p>Yes! Take a look at <a href="../usage/adding_custom_tools/">this tutorial</a>.</p>
+<p>Ya! Lihat <a href="../usage/adding_custom_tools/">tutorial ini</a>.</p>
 <h2 id="misc">MISC</h2>
 <blockquote>
-<p>What's up with all the output files?</p>
+<p>Apa yang terjadi dengan semua file output?</p>
 </blockquote>
-<p>You're probably most interested in the <code>*.traj</code> files, which contain complete records of SWE-agent's thought process and actions. See <a href="../usage/trajectories/">output files</a> for more information.</p>
-<h2 id="anything-else">Anything else?</h2>
+<p>Anda mungkin paling tertarik pada file <code>*.traj</code>, yang berisi catatan lengkap tentang proses pemikiran dan tindakan onnobot-agent. Lihat <a href="../usage/trajectories/">file output</a> untuk informasi lebih lanjut.</p>
+<h2 id="ada-yang-lain">Ada yang lain?</h2>
 <blockquote>
-<p>I have a question/bug report/feature request...</p>
+<p>Saya memiliki pertanyaan/laporan bug/permintaan fitur...</p>
 </blockquote>
-<p>Please open a <a href="https://github.com/SWE-agent/SWE-agent/issues">github issue!</a>!</p>
+<p>Silakan buka <a href="https://github.com/onnobot-agent/onnobot-agent/issues">isu github!</a>!</p>
 <div class="grid cards">
   <a href="https://github.com/SWE-agent/SWE-agent/issues/new" class="nav-card-link">
     <div class="nav-card">
