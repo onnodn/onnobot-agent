@@ -1,5 +1,5 @@
-# Security Policy
+# Kebijakan Keamanan
 
-## Reporting a Vulnerability
+## Melaporkan Kerentanan
 
-Please contact Kilian Lieret (kl5675@princeton.edu), John Yang (johnby@stanford.edu), Carlos E. Jimenez (carlosej@princeton.edu), and Ofir Press (ofirp@princeton.edu).
+Silakan hubungi Kilian Lieret (kl5675@princeton.edu), John Yang (johnby@stanford.edu), Carlos E. Jimenez (carlosej@princeton.edu), dan Ofir Press (ofirp@princeton.edu).

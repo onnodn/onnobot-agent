@@ -1,16 +1,16 @@
-# Contribution guidelines
+# Panduan Kontribusi
 
-<!-- Please don't use relative links in this page, as it is included by github in various places -->
+<!-- Mohon jangan gunakan link relatif di halaman ini, karena ini disertakan oleh github di berbagai tempat -->
 <!-- INCLUSION START -->
 
-The easiest way to contribute is to give us feedback.
+Cara termudah untuk berkontribusi adalah memberikan kami umpan balik.
 
-* **Something isn't working?** Open a [bug report](https://github.com/SWE-agent/SWE-agent/issues/new?template=bug_report.yml).
-  Rule of thumb: If you're running something and you get some error messages, this is the issue type for you.
-* **You have a concrete question?** Open a [question issue](https://github.com/SWE-agent/SWE-agent/issues/new?template=question.yml).
-* **You are missing something?** Open a [feature request issue](https://github.com/SWE-agent/SWE-agent/issues/new?template=feature_request.yml)
-* **Open-ended discussion?** Talk on [discord](https://discord.gg/AVEFbBn2rH). Note that all actionable items should be an issue though.
+* **Ada yang tidak bekerja?** Buka [laporan bug](https://github.com/onnobot-agent/onnobot-agent/issues/new?template=bug_report.yml).
+  Aturan praktis: Jika Anda menjalankan sesuatu dan mendapatkan beberapa pesan kesalahan, ini adalah jenis masalah untuk Anda.
+* **Anda memiliki pertanyaan konkret?** Buka [pertanyaan masalah](https://github.com/onnobot-agent/onnobot-agent/issues/new?template=question.yml).
+* **Anda kehilangan sesuatu?** Buka [permintaan fitur masalah](https://github.com/onnobot-agent/onnobot-agent/issues/new?template=feature_request.yml)
+* **Diskusi terbuka?** Bicaralah di [discord](https://discord.gg/AVEFbBn2rH). Catatan bahwa semua item yang dapat ditindaklanjuti harus menjadi masalah.
 
 <!-- INCLUSION END -->
 
-You want to do contribute to the development? Great! Please see the [development guidelines](https://swe-agent.com/latest/dev/contribute/) for guidelines and tips.
+Apakah Anda ingin berkontribusi pada pengembangan? Hebat! Silakan lihat [panduan pengembangan](https://onnobot-agent.com/latest/dev/contribute/) untuk pedoman dan tips.

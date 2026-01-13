@@ -1,5 +1,5 @@
 ---
-title: "Getting Started"
+title: "Memulai"
 ---
 <style>
   .md-typeset h1,
@@ -9,30 +9,30 @@ title: "Getting Started"
 </style>
 
 <div style="text-align: center;">
-    <img class="light-mode-only" src="assets/readme_assets/swe-agent-banner-light.svg" alt="SWE-agent banner" style="height: 10em;">
-    <img class="dark-mode-only" src="assets/readme_assets/swe-agent-banner-dark.svg" alt="SWE-agent banner" style="height: 10em;">
+    <img class="light-mode-only" src="assets/readme_assets/onnobot-agent-banner-light.svg" alt="onnobot-agent banner" style="height: 10em;">
+    <img class="dark-mode-only" src="assets/readme_assets/onnobot-agent-banner-dark.svg" alt="onnobot-agent banner" style="height: 10em;">
 </div>
 
-SWE-agent enables your language model of choice (e.g. GPT-4o or Claude Sonnet 4) to autonomously use tools to
-[fix issues in real GitHub repositories](https://swe-agent.com/latest/usage/hello_world),
-[find cybersecurity vulnerabilities](https://enigma-agent.com/), or
-[perform any custom task](https://swe-agent.com/latest/usage/coding_challenges).
+onnobot-agent memungkinkan model bahasa pilihan Anda (misalnya GPT-4o atau Claude Sonnet 4) untuk secara otonom menggunakan tools untuk
+[memperbaiki isu di repositori GitHub nyata](https://onnobot-agent.com/latest/usage/hello_world),
+[menemukan kerentanan keamanan siber](https://enigma-agent.com/), atau
+[melakukan tugas kustom apa pun](https://onnobot-agent.com/latest/usage/coding_challenges).
 
-* ✅ **State of the art** on SWE-bench among open-source projects
-* ✅ **Free-flowing & generalizable**: Leaves maximal agency to the LM
-* ✅ **Configurable & fully documented**: Governed by a single `yaml` file
-* ✅ **Made for research**: Simple & hackable by design
+* ✅ **State of the art** di onnobot-bench di antara proyek open-source
+* ✅ **Bebas mengalir & dapat digeneralisasi**: Memberikan agensi maksimal kepada LM
+* ✅ **Dapat dikonfigurasi & terdokumentasi sepenuhnya**: Diatur oleh file `yaml` tunggal
+* ✅ **Dibuat untuk penelitian**: Sederhana & dapat dipotong oleh desain
 
-SWE-agent is built and maintained by researchers from Princeton University and Stanford University.
+onnobot-agent dibangun dan dirawat oleh peneliti dari Universitas Princeton dan Universitas Stanford.
 
 <div class="grid cards">
   <a href="installation/" class="nav-card-link">
     <div class="nav-card">
       <div class="nav-card-header">
         <span class="material-icons nav-card-icon">download</span>
-        <span class="nav-card-title">Installation</span>
+        <span class="nav-card-title">Instalasi</span>
       </div>
-      <p class="nav-card-description">Installing SWE-agent.</p>
+      <p class="nav-card-description">Menginstal onnobot-agent.</p>
     </div>
   </a>
 
@@ -42,7 +42,7 @@ SWE-agent is built and maintained by researchers from Princeton University and S
         <span class="material-icons nav-card-icon">settings</span>
         <span class="nav-card-title">Hello world</span>
       </div>
-      <p class="nav-card-description">Solve a GitHub issue with SWE-agent.</p>
+      <p class="nav-card-description">Selesaikan isu GitHub dengan onnobot-agent.</p>
     </div>
   </a>
 

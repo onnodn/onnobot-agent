@@ -1,62 +1,62 @@
-# Frequently Asked Questions
+# Pertanyaan yang Sering Diajukan
 
-## Basics
+## Dasar-dasar
 
-> Does SWE-agent run on Windows/MacOS/Linux?
+> Apakah onnobot-agent berjalan di Windows/MacOS/Linux?
 
-Yes! Your only limitation might be the availability of the docker containers for your environments.
-But you can always execute SWE-agent in the cloud.
+Ya! Satu-satunya batasan Anda mungkin ketersediaan kontainer docker untuk lingkungan Anda.
+Tetapi Anda selalu dapat menjalankan onnobot-agent di cloud.
 
-> I got a very long error message about various configuration options not working. What's up?
+> Saya mendapat pesan kesalahan yang sangat panjang tentang berbagai opsi konfigurasi yang tidak berfungsi. Apa yang terjadi?
 
-This is probably because of union types.
-See [this section](usage/cl_tutorial.md#union-types) for more information, but the short version is that some options (e.g., the repository or problem statement) can be specified in multiple ways, so we try every option until we find the one that works based on your inputs.
-If none of them work, we throw an error which then tells you why we cannot initialize any of the types, so this will get somewhat long and confusing.
+Ini mungkin karena tipe union.
+Lihat [bagian ini](usage/cl_tutorial.md#union-types) untuk informasi lebih lanjut, tetapi versi singkatnya adalah bahwa beberapa opsi (misalnya, repositori atau pernyataan masalah) dapat ditentukan dengan cara yang berbeda, jadi kami mencoba setiap opsi hingga menemukan yang bekerja berdasarkan masukan Anda.
+Jika tidak ada yang berfungsi, kami melempar kesalahan yang kemudian memberi tahu Anda mengapa kami tidak dapat menginisialisasi salah satu tipe, jadi ini akan menjadi agak panjang dan membingungkan.
 
-> Why are my images not being processed?
+> Mengapa gambar saya tidak diproses?
 
-Check that you're using a multimodal configuration (see `default_mm_with_images.yaml` as an example), have internet connectivity, and images are under 10MB. See [Multimodal usage notes](usage/multimodal.md) for more details.
+Periksa bahwa Anda menggunakan konfigurasi multimodal (lihat `default_mm_with_images.yaml` sebagai contoh), memiliki konektivitas internet, dan gambar di bawah 10MB. Lihat [Catatan penggunaan Multimodal](usage/multimodal.md) untuk detail selengkapnya.
 
-## Models
+## Model
 
-> What models are supported? Do you support local models?
+> Model apa yang didukung? Apakah Anda mendukung model lokal?
 
-Probably all of them, including local models! There's even a few for testing. See [models](installation/keys.md) and [more on models](config/models.md).
+Mungkin semuanya, termasuk model lokal! Ada bahkan beberapa untuk pengujian. Lihat [models](installation/keys.md) dan [lebih lanjut tentang model](config/models.md).
 
-> Does SWE-agent support multimodal models and images?
+> Apakah onnobot-agent mendukung model multimodal dan gambar?
 
-Yes! SWE-agent supports vision-capable models that can process images from GitHub issues. Use `--config config/default_mm_with_images.yaml` and specify a multimodal model like Claude Sonnet 4 or GPT-4o. See the [multimodal guide](usage/multimodal.md) for details.
+Ya! onnobot-agent mendukung model yang mampu visi yang dapat memproses gambar dari isu GitHub. Gunakan `--config config/default_mm_with_images.yaml` dan tentukan model multimodal seperti Claude Sonnet 4 atau GPT-4o. Lihat [panduan multimodal](usage/multimodal.md) untuk detail.
 
-> What can I do if my model doesn't support function calling?
+> Apa yang dapat saya lakukan jika model saya tidak mendukung function calling?
 
-You can configure how to parse the model's response by choosing your `agent.tools.parse_function`.
-The default now is `function_calling`, but you can change it to `thought_action`.
-More information in the [reference](reference/parsers.md).
-There are also some config example in our [config folder](https://github.com/SWE-agent/SWE-agent/tree/main/config).
+Anda dapat mengonfigurasi cara menguraikan respons model dengan memilih `agent.tools.parse_function`.
+Standarnya sekarang adalah `function_calling`, tetapi Anda dapat mengubahnya menjadi `thought_action`.
+Informasi lebih lanjut di [referensi](reference/parsers.md).
+Ada juga beberapa contoh config di [folder config](https://github.com/onnobot-agent/onnobot-agent/tree/main/config) kami.
 
-## Configuring SWE-agent
+## Mengonfigurasi onnobot-agent
 
-> How can I change the demonstrations given to SWE-agent?
+> Bagaimana cara mengubah demonstrasi yang diberikan kepada onnobot-agent?
 
-At the start of each run, we feed the agent a demonstration trajectory, showing it how to solve an example issue.
-This substantially improves the agent's abilities to solve novel issues.
-If you'd like to modify or totally change this demonstration, to better fit your use case, see [this](config/demonstrations.md).
+Pada awal setiap jalan, kami memberi agen lintasan demonstrasi, menunjukkan bagaimana menyelesaikan contoh isu.
+Ini secara substansial meningkatkan kemampuan agen untuk menyelesaikan isu novel.
+Jika Anda ingin memodifikasi atau sepenuhnya mengubah demonstrasi ini, untuk lebih cocok dengan kasus penggunaan Anda, lihat [ini](config/demonstrations.md).
 
-> Can I add custom tools?
+> Bisakah saya menambahkan alat kustom?
 
-Yes! Take a look at [this tutorial](usage/adding_custom_tools.md).
+Ya! Lihat [tutorial ini](usage/adding_custom_tools.md).
 
 ## MISC
 
-> What's up with all the output files?
+> Apa yang terjadi dengan semua file output?
 
-You're probably most interested in the `*.traj` files, which contain complete records of SWE-agent's thought process and actions. See [output files](usage/trajectories.md) for more information.
+Anda mungkin paling tertarik pada file `*.traj`, yang berisi catatan lengkap tentang proses pemikiran dan tindakan onnobot-agent. Lihat [file output](usage/trajectories.md) untuk informasi lebih lanjut.
 
-## Anything else?
+## Ada yang lain?
 
-> I have a question/bug report/feature request...
+> Saya memiliki pertanyaan/laporan bug/permintaan fitur...
 
-Please open a [github issue!](https://github.com/SWE-agent/SWE-agent/issues)!
+Silakan buka [isu github!](https://github.com/onnobot-agent/onnobot-agent/issues)!
 
 
 {% include-markdown "_footer.md" %}
